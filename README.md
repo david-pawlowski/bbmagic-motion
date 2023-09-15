@@ -9,9 +9,9 @@ I am using this script on **raspberry pi zero w**
 
 Compile by:
 ```bash
-make all
+$ make all
 ```
 Then(sudo might be needed):
 ```bash
-./bbmagic_motion_sketch
+$ ./bbmagic_motion_sketch
 ```

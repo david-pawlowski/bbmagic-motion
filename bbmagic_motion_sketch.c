@@ -9,8 +9,7 @@
 int main(void)
 {
     unsigned char bbm_buf[BBLIB_FRAME_SIZE];
-    int i, adc1, adc2, data_length;
-    float vcc_f;
+    int is_connection_open, data_length;
     FILE *fptr;
     time_t timestamp;
     struct tm *loctime;
@@ -18,9 +17,8 @@ int main(void)
 
     fptr = fopen("logs.txt", "a");
 
-    i = bbm_bt_open(17);
-    if (i)
-        exit(2);
+    is_connection_open = !bbm_bt_open(17);
+    if (is_connection_open) exit(2);
 
     do
     {

@@ -1,3 +1,3 @@
 Script found there:
 http://bbmagic.net/do-pobrania/
-with a little fo my refactor and save to file feature
+Refactored to minimal code for object detection with saving output to file
